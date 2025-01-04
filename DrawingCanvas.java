@@ -26,6 +26,8 @@ public class DrawingCanvas extends JComponent {
         g2d.setColor(Color.WHITE);
         g2d.fillRect(0, 0, this.width, this.height);
         g2d.setColor(Color.BLACK);
-
+        for (Shape i : this.shapes){
+            i.draw(g2d);
+        }
     }
 }
