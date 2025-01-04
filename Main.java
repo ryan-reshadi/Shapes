@@ -10,7 +10,8 @@ public class Main {
         int h = 600;
         JFrame f = new JFrame();
         Rectangle Rect1 = new Rectangle(new Point(100, 100), new Point(300, 300),Color.RED);
-        Shape[] shapeArray = {Rect1};
+        Square Square1 = new Square(new Point(500, 200), 50, Color.CYAN);
+        Shape[] shapeArray = {Rect1,Square1};
         DrawingCanvas dc = new DrawingCanvas(w, h, shapeArray);
         f.setSize(w, h);
         f.setTitle("Canvas");
