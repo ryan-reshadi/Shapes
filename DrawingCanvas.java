@@ -8,10 +8,11 @@ public class DrawingCanvas extends JComponent {
     private int width;
     private int height;
     private Shape[] shapes;
+
     public DrawingCanvas(int w, int h, Shape[] shapes) {
         this.width = w;
         this.height = h;
-        this.shapes= shapes;
+        this.shapes = shapes;
     }
 
     protected void paintComponent(Graphics g) {
@@ -23,8 +24,8 @@ public class DrawingCanvas extends JComponent {
         );
         g2d.setRenderingHints(rh);
         g2d.setColor(Color.WHITE);
-        g2d.fillRect(0,0,this.width,this.height);
+        g2d.fillRect(0, 0, this.width, this.height);
         g2d.setColor(Color.BLACK);
-        
+
     }
 }

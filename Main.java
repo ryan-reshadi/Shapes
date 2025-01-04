@@ -3,6 +3,7 @@ package Shapes;
 import javax.swing.JFrame;
 
 public class Main {
+
     public static void main(String[] args) {
         int w = 800;
         int h = 600;
