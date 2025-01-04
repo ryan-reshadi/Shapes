@@ -1,4 +1,4 @@
-package Shapes;
+package Shapes.ShapeClasses;
 
 import java.awt.Color;
 
