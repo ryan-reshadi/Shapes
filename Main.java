@@ -1,7 +1,6 @@
 package Shapes;
 
 import Shapes.ShapeClasses.*;
-
 import java.awt.Color;
 import javax.swing.JFrame;
 
