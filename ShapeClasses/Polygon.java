@@ -13,5 +13,6 @@ public class Polygon extends Shape{
         }
         this.points[this.points.length - 1].toPoint(g2d, this.points[0]);
         g2d.setColor(prevColor);
+        
     }
 }
