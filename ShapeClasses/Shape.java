@@ -1,4 +1,4 @@
-package Shapes.ShapeClasses;
+package ShapeClasses;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
@@ -7,7 +7,7 @@ public class Shape {
 
     protected Color color;
     protected Point[] points;
-    public Shape(Color color,Point[] points){
+    public Shape(Point[] points,Color color){
         this.color = color;
         this.points = points;
     }

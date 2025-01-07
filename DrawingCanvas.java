@@ -1,6 +1,5 @@
-package Shapes;
 
-import Shapes.ShapeClasses.Shape;
+import ShapeClasses.Shape;
 import java.awt.*;
 import javax.swing.*;
 

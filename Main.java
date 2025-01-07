@@ -1,6 +1,5 @@
-package Shapes;
 
-import Shapes.ShapeClasses.*;
+import ShapeClasses.*;
 import java.awt.Color;
 import javax.swing.JFrame;
 
@@ -12,7 +11,8 @@ public class Main {
         JFrame f = new JFrame();
         Rectangle Rect1 = new Rectangle(new Point(100, 100), new Point(300, 300),Color.RED);
         Square Square1 = new Square(new Point(500, 200), 50, Color.CYAN);
-        Shape[] shapeArray = {Rect1,Square1};
+        Ellipse Ellipse1 = new Ellipse(new Point(300, 300), 100, 200, Color.BLUE);
+        Shape[] shapeArray = {Rect1,Square1,Ellipse1};
         DrawingCanvas dc = new DrawingCanvas(w, h, shapeArray);
         f.setSize(w, h);
         f.setTitle("Canvas");

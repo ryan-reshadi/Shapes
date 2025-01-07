@@ -1,4 +1,4 @@
-package Shapes.ShapeClasses;
+package ShapeClasses;
 
 import java.awt.Graphics2D;
 

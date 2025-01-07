@@ -1,4 +1,4 @@
-package Shapes.ShapeClasses;
+package ShapeClasses;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
@@ -7,13 +7,14 @@ public class Rectangle extends Shape {
 
     public Rectangle(Point p1, Point p2, Color color) {
         super(
-                color,
+                
                 new Point[]{
                     p1,
                     new Point(p1.x, p2.y),
                     p2,
                     new Point(p2.x, p1.y)
-                }
+                },
+                color
         );
 
     }
