@@ -14,5 +14,10 @@ public class Shape {
     public void draw(Graphics2D g2d) {
         System.out.println("Derive from Shape");
     }
-
+    public void translation(int deltaX,int deltaY){
+        for (Point i : this.points){
+            i.x+=deltaX;
+            i.y+=deltaY;
+        }
+    }
 }

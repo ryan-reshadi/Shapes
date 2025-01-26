@@ -15,9 +15,14 @@ public class RegularPolygon extends Polygon {
         this.angle = 2 * Math.PI/sides;
         this.update();
     }
-    public void update (){
-        for (int i=0; i<sides;i++){
-            this.points[i]=new Point((int) (this.center.x + sideLength * Math.cos(i * this.angle)), (int) (this.center.y + sideLength * Math.sin(i * this.angle)));
+    private void update (){
+        double angleStep = 2 * Math.PI / this.sides;
+        double radius = sideLength / (2 * Math.sin(Math.PI / this.sides));
+        double startAngle = -Math.PI / 2; // Rotate to start from the top
+
+        for (int i = 0; i < this.sides; i++) {
+            this.points[i] = new Point((int) (this.center.x + radius * Math.cos(startAngle + i * angleStep)),(int) (this.center.y + radius * Math.sin(startAngle + i * angleStep)));
         }
     }
+    
 }
