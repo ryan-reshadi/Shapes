@@ -69,10 +69,31 @@ public class Shape {
                     return true;
                 }
             }
-            checker.x++;
-            checker.y++;
+            // checker.x++;
+            // checker.y = lineFromCenter(checker, checker.x);
+            if (checker.x>this.centerPoint.x){
+                checker.x++;
+            } else {
+                checker.x--;
+            }
         }
         return false;
+    }
+    public boolean Collide(Shape s){
+        Point checker = new Point (s.centerPoint.x, s.centerPoint.y);
+        // for (BoundingBox i : this.lineBoundingBoxes){
+        //     for (BoundingBox j : s.lineBoundingBoxes){
+        //         if (i.Collide(j)){
+        //             return true;
+        //         }
+        //     }
+        // }
+        if (this.boundingBox.Collide(s.boundingBox)){
+            
+        }
+        else {
+            return false;
+        }
     }
     public int lineFromCenter (Point target, int input){
         int slope = (target.y - this.centerPoint.y) / (target.x - this.centerPoint.x);
